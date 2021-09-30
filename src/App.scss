@@ -1,4 +1,5 @@
-@use "../assets/sass/variable.scss" as *;
+@use "./assets/sass/variable.scss" as *;
+
 
 .app {
     margin: 0;
@@ -6,3 +7,7 @@
     box-sizing: border-box;
 }
 
+.header {
+    display: flex;
+    align-items: center;
+}

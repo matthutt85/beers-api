@@ -1,6 +1,8 @@
 
 import beers from "./data/beers";
 import Nav from "./components/Nav/Nav";
+import beer from "./assets/images/beer.jpeg";
+import "./App.scss";
 
 
 
@@ -19,7 +21,7 @@ const App = () => {
   return (
     <div className="App">
         <header className="header">
-            <img src="src\assets\images\PUNKipa.jpeg" className="beer" alt="beer-Image" />
+            <img src={beer} className="beer" alt="beer" />
         </header>
         <Nav />
     </div>

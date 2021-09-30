@@ -1,3 +1,7 @@
+@use "../assets/sass/variable.scss" as *;
 
-
-.
+.beertile {
+    height: 70vh;
+    background-color: aqua;
+    border: black;
+}
