@@ -16,14 +16,19 @@ import "./App.scss";
 
 const App = () => {
 
+  const title = "Punk API Beer App"
+
+  
 
 
   return (
     <div className="App">
-        <header className="header">
-            <img src={beer} className="beer" alt="beer" />
-        </header>
+        <header className="header">{title}</header>
         <Nav />
+
+        <section className="beerTile">
+        {/* <BeerTile /> */}
+        </section>
     </div>
   );
 }

@@ -1,5 +1,22 @@
 
 
-.form__input {
-    height: 30px;
+.nav__form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+
+}
+
+.checkbox {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.nav__form-input {
+    background-color: unset;
+
 }
