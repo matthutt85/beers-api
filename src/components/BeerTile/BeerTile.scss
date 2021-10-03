@@ -1,6 +1,9 @@
-@use "../assets/sass/variable.scss" as *;
+
 
 .beertile {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     height: 70vh;
     background-color: aqua;
     border: black;

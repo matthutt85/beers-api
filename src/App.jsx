@@ -3,6 +3,7 @@ import beers from "./data/beers";
 import Nav from "./components/Nav/Nav";
 import beer from "./assets/images/beer.jpeg";
 import "./App.scss";
+import BeerTile from "./components/BeerTile/BeerTile";
 
 
 
@@ -27,7 +28,7 @@ const App = () => {
         <Nav />
 
         <section className="beerTile">
-        {/* <BeerTile /> */}
+        <BeerTile />
         </section>
     </div>
   );
