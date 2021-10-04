@@ -1,10 +1,50 @@
+@use "../../assets/sass/variable.scss" as *;
 
 
+
+
+@media (min-device-width: 320px) {
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 60vh;
+    
+    &__image {
+        height: 40vh;
+    }
+}
+    
+    
+}
+    
+    
+    
+    
+@media (min-device-width: 768px) {
+    
 .beertile {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    height: 70vh;
-    background-color: aqua;
-    border: black;
+    grid-template-columns: repeat(2fr, 1);
+    grid-template-rows: repeat(2fr, 1);
+}
+    
+}
+    
+    
+    
+    
+    
+@media (min-device-width: 1200px) {
+    
+        .beertile {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            height: 80vh;
+            background-color: none;
+            gap: 10px solid brown;
+        
+    
+    }
 }

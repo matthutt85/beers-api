@@ -11,7 +11,8 @@ const BeerTile = (props) => {
         return <BeerCard 
         title={beerObj.name} 
         image={beerObj.image_url}
-        description={beerObj.description}/>
+        description={beerObj.description}
+        abv={beerObj.abv}/>
     });
 
     return (

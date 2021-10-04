@@ -1,0 +1,116 @@
+@use "../../assets/sass/variable.scss" as *;
+
+
+
+
+
+
+@media (min-device-width: 320px) {
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr;
+    border: 3px solid $color-black;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 3px 5px 3px $color-black;
+    
+
+    &__title {
+        justify-self: center;
+        align-self: center;
+        font-family: $primary-font;
+        color: $color-black;
+    }
+
+    &__image {
+        justify-self: center;
+        align-items: center;
+        height: 25vh;
+    }
+
+    &__description {
+        font-size: 9px;
+        font-family: $primary-font;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    &__abv {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $primary-color;
+    }
+    
+}
+
+
+}
+
+@media (min-device-width: 768px) {
+
+    .card {
+        display: grid;
+        grid-template-columns: 2fr;
+        border: 3px solid $color-black;
+        margin: 40px;
+        border-radius: 15px;
+        box-shadow: 3px 5px 3px $color-black;
+        
+    
+        &__title {
+            justify-self: center;
+            align-self: center;
+            font-family: $primary-font;
+            color: $color-black;
+        }
+    
+        &__image {
+            justify-self: center;
+            align-items: center;
+            height: 25vh;
+        }
+    
+        &__description {
+            font-size: 15px;
+            font-family: $primary-font;
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+    
+        &__abv {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $primary-color;
+        }
+        
+    }
+    
+
+}
+
+
+
+
+@media (min-device-width: 1200px) {
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 60vh;
+    background-color:none;
+    border: 2px solid black;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+
+    &__image {
+        height: 30vh;
+    }
+}
+
+}
