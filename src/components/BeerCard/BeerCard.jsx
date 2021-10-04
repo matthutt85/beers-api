@@ -1,14 +1,18 @@
-import React from 'react';
+import React from 'react'
 
 
 
-const BeerCard = () => {
+const BeerCard = (props) => {
+
+    const { title, image, description } = props
+
+
+
+
     return (
-        <div className="beerCards">
-            <div className="beerCards__card">
-                
-            </div>
-            
+        <div className="">
+            <p className="">{title} </p>
+            <img src={image}/>
         </div>
     )
 }
