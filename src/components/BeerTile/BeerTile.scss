@@ -26,7 +26,8 @@
 .beertile {
     display: grid;
     grid-template-columns: repeat(2fr, 1);
-    grid-template-rows: repeat(2fr, 1);
+    grid-template-rows: repeat(3fr, 1);
+    background-color: cadetblue;
 }
     
 }
@@ -43,8 +44,7 @@
             grid-template-rows: repeat(2, 1fr);
             height: 80vh;
             background-color: none;
-            gap: 10px solid brown;
-        
+            
     
     }
 }

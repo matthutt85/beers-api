@@ -1,7 +1,6 @@
 
 import beers from "./data/beers";
 import Nav from "./components/Nav/Nav";
-import beer from "./assets/images/beer.jpeg";
 import "./App.scss";
 import BeerTile from "./components/BeerTile/BeerTile";
 
@@ -26,10 +25,11 @@ const App = () => {
         <Nav />
 
         <section className="beerTile">
-        <BeerTile beers={beers}/>
+        <BeerTile beers={beers}/>  
         </section>
     </div>
   );
 }
 
+// ** beers={beers} means beers is the doc and beers is the prop being sent down to BeerTile
 export default App;

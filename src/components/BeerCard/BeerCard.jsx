@@ -1,5 +1,5 @@
 import React from 'react'
-import beercard from "./BeerCard.scss";
+import "./BeerCard.scss";
 
 
 

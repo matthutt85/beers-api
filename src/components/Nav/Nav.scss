@@ -1,26 +1,42 @@
 @use "../../assets/sass/variable.scss" as *;
 
-.nav__form {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 10px;
-    font-family: $primary-font;
-    border-radius: 15px;
 
+
+
+
+
+@media (min-device-width: 320px) {
+    
+    .nav__form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+        font-family: $primary-font;
+        border-radius: 15px;
+        
+    }
+    
+    .checkbox {
+        margin: 10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-family: $primary-font;
+        color: brown;
+        font-size: 10px;
+    }
+    
+    .nav__form-input {
+        background-color: unset;
+        
+    }
 }
 
-.checkbox {
-    margin: 10px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    font-family: $primary-font;
-    color: brown;
-    font-size: 10px;
+@media (min-device-width: 768px) {
+    
 }
 
-.nav__form-input {
-    background-color: unset;
+@media (min-device-width: 1200px) {
     
 }
