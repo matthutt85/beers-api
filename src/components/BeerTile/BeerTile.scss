@@ -9,7 +9,7 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6, 1fr);
-        background-color: cadetblue;
+        
     }
         
     }
@@ -20,11 +20,10 @@
 @media (min-device-width: 768px) {
     
 .beertile {
-    height: 100vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    background-color: cadetblue;
+   
 }
     
 }
@@ -39,7 +38,7 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: repeat(2, 1fr);
-            height: 100vh;
+            height: 70vh;
             background-color: none;
             
     

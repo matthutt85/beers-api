@@ -22,22 +22,75 @@ const App = () => {
 
   const [ beersArray, setBeerArray ] = useState([]);
 
- useEffect(() => {
+  const [abv, setABV ] = useState(false);
 
-   fetch("https://api.punkapi.com/v2/beers").then(response => {
+  const [ classic, setClassic ] = useState(false);
+
+  const [ acidic, setAcidic ] = useState(false);
+
+
+  
+  const handleAcidic = () => {
+    if(acidic === true){
+      setAcidic(false)
+    } else {
+      setAcidic(true)
+    }
+  }
+  
+  
+  const handleAbv = () => {
+    if(abv === true){
+    setABV(false)
+  } else {
+    setABV(true)
+  }
+}
+
+  const handleInput = (event) => {
+    const userInput = event.target.value;
+    setSearchTerm(userInput)
+  }
+
+
+ 
+ 
+ 
+  useEffect(() => {
+
+  let url = "https://api.punkapi.com/v2/beers"
+  
+  if (abv === true){
+    url = "https://api.punkapi.com/v2/beers?abv_gt=6";
+  }
+
+  if (acidic === true){
+    url = "https://api.punkapi.com/v2/beers?ibu_lt=60";
+  }
+   
+  fetch(url).then(response => {
      return response.json()
    }).then(beerObj => {
      setBeerArray(beerObj)
-   })
+    })
 
- }, [])
+
+ }, [abv])
+
+
 
 
   return (
     <div className="App">
         <header className="header">{title}</header>
-        <Nav />
-
+        <Nav 
+          inputValue={searchTerm} 
+          handleAbv={handleAbv}
+          handleAcidic={handleAcidic} 
+          handleInput={handleInput}/>
+        <p>{"state = " + searchTerm}</p>
+        <p>{"abv = " + abv}</p>
+        <p>{"acidic = " + acidic}</p>
         <section className="beerTile">
         <BeerTile beers={beersArray}/>  
         </section>

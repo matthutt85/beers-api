@@ -10,10 +10,11 @@
 .card {
     display: grid;
     grid-template-columns: 1fr;
-    border: 3px solid $color-black;
+    border: 3px solid rgb(213, 211, 211);
     margin: 20px;
-    border-radius: 15px;
-    box-shadow: 3px 5px 3px $color-black;
+    border-radius: 15px;  
+    box-shadow: 0 0 10px $primary-color;             
+    overflow: hidden;
     
 
     &__title {
@@ -53,10 +54,10 @@
     .card {
         display: grid;
         grid-template-columns: 2fr;
-        border: 3px solid $color-black;
+        border: 3px solid rgb(213, 211, 211);
         margin: 40px;
         border-radius: 15px;
-        box-shadow: 3px 5px 3px $color-black;
+        box-shadow: 0 0 10px $primary-color;   
         
     
         &__title {
