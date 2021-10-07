@@ -3,9 +3,9 @@ import "./Nav.scss";
 
 
 
-const Nav = () => {
+const Nav = (props) => {
 
-
+const { inputValue, handleInput } = props;
 
 
 
@@ -16,7 +16,7 @@ const Nav = () => {
             </form>
             <div className="checkbox">
                 <label for="checkbox1">High ABV (> 6.0%)</label>
-                <input type="checkbox" className="nav__form-checkbox1" name="checkbox1"></input>
+                <input type="checkbox" value={inputValue} className="nav__form-checkbox1" name="checkbox1"></input>
                 <label for="checkbox2">Classic Range</label>
                 <input type="checkbox" className="nav__form-checkbox1" name="checkbox2"></input>     
                 <label for="checkbox3">Acidic</label>

@@ -5,18 +5,14 @@
 
 @media (min-device-width: 320px) {
 
-.card {
-    display: grid;
-    grid-template-columns: 1fr;
-    height: 60vh;
-    
-    &__image {
-        height: 40vh;
+    .beertile {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        background-color: cadetblue;
     }
-}
-    
-    
-}
+        
+    }
     
     
     
@@ -24,9 +20,10 @@
 @media (min-device-width: 768px) {
     
 .beertile {
+    height: 100vh;
     display: grid;
-    grid-template-columns: repeat(2fr, 1);
-    grid-template-rows: repeat(3fr, 1);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     background-color: cadetblue;
 }
     
@@ -42,7 +39,7 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: repeat(2, 1fr);
-            height: 80vh;
+            height: 100vh;
             background-color: none;
             
     

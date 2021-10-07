@@ -34,9 +34,61 @@
 }
 
 @media (min-device-width: 768px) {
+ 
+    .nav__form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+        font-family: $primary-font;
+        border-radius: 15px;
+        
+    }
     
+    .checkbox {
+        margin: 10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-family: $primary-font;
+        color: brown;
+        font-size: 15px;
+    }
+    
+    .nav__form-input {
+        background-color: unset;
+        
+    }
 }
+
+
 
 @media (min-device-width: 1200px) {
     
+    .nav__form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+        font-family: $primary-font;
+        border-radius: 15px;
+        
+    }
+    
+    .checkbox {
+        margin: 10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-family: $primary-font;
+        color: brown;
+        font-size: 10px;
+    }
+    
+    .nav__form-input {
+        background-color: unset;
+        
+    }
 }
+
+

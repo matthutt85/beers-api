@@ -1,4 +1,4 @@
-
+import React, { useState, useEffect } from "react";
 import beers from "./data/beers";
 import Nav from "./components/Nav/Nav";
 import "./App.scss";
@@ -16,7 +16,21 @@ import BeerTile from "./components/BeerTile/BeerTile";
 
 const App = () => {
 
-  const title = "Punk API Beer App"
+  const title = "Punk API Beer App";
+
+  const [ searchTerm, setSearchTerm ] = useState("");
+
+  const [ beersArray, setBeerArray ] = useState([]);
+
+ useEffect(() => {
+
+   fetch("https://api.punkapi.com/v2/beers").then(response => {
+     return response.json()
+   }).then(beerObj => {
+     setBeerArray(beerObj)
+   })
+
+ }, [])
 
 
   return (
@@ -25,7 +39,7 @@ const App = () => {
         <Nav />
 
         <section className="beerTile">
-        <BeerTile beers={beers}/>  
+        <BeerTile beers={beersArray}/>  
         </section>
     </div>
   );
