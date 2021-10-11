@@ -20,6 +20,7 @@
     &__title {
         justify-self: center;
         align-self: center;
+        text-align: center;
         font-family: $primary-font;
         color: $color-black;
     }
@@ -42,6 +43,13 @@
         justify-content: center;
         align-items: center;
         color: $primary-color;
+    }
+
+    &__ph {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: red;
     }
     
 }
@@ -86,6 +94,13 @@
             align-items: center;
             color: $primary-color;
         }
+
+        &__ph {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: red;
+        }
         
     }
     
@@ -104,13 +119,44 @@
     flex-direction: column;
     height: 60vh;
     background-color:none;
-    border: 2px solid black;
+    border: 3px solid rgb(213, 211, 211);
     margin: 10px;
     padding: 10px;
     border-radius: 15px;
 
+    
+    &__title {
+        justify-self: center;
+        align-self: center;
+        font-family: $primary-font;
+        color: $color-black;
+    }
+
     &__image {
-        height: 30vh;
+        justify-self: center;
+        align-items: center;
+        height: 25vh;
+    }
+
+    &__description {
+        font-size: 15px;
+        font-family: $primary-font;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    &__abv {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $primary-color;
+    }
+
+    &__ph {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: red;
     }
 }
 

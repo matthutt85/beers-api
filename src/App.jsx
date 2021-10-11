@@ -3,6 +3,7 @@ import beers from "./data/beers";
 import Nav from "./components/Nav/Nav";
 import "./App.scss";
 import BeerTile from "./components/BeerTile/BeerTile";
+import Brewdog from "./assets/images/Brewdog_logo.png";
 
 
 
@@ -62,6 +63,9 @@ const App = () => {
   }
 
 
+  const filteredPh = beers.filter(beer => {
+
+  })
  
  
  
@@ -80,6 +84,10 @@ const App = () => {
   if (classic === true){
     url = "https://api.punkapi.com/v2/beers?brewed_before=12-2010"
   }
+
+  if (searchTerm) {
+    url = `https://api.punkapi.com/v2/beers?beer_name=${searchTerm}`
+  }
    
   fetch(url).then(response => {
      return response.json()
@@ -88,24 +96,27 @@ const App = () => {
     })
 
 
- }, [abv, classic, acidic])
+ }, [abv, classic, acidic, searchTerm])
 
 
 
 
   return (
     <div className="App">
-        <header className="header">{title}</header>
+        <header className="header">{title}
+          <img className="header__image" src={Brewdog} alt="brewdog" />
+        </header>
         <Nav 
           inputValue={searchTerm} 
           handleAbv={handleAbv}
           handleAcidic={handleAcidic} 
-          handleInput={handleInput}/>
-          handleClassic={handleClassic}
-        <p>{"state = " + searchTerm}</p>
+          handleInput={handleInput}
+          handleClassic={handleClassic}/>
+          
+        {/* <p>{"state = " + searchTerm}</p>
         <p>{"abv = " + abv}</p>
         <p>{"acidic = " + acidic}</p>
-        <p>{"classic = " + classic}</p>
+        <p>{"classic = " + classic}</p> */}
         <section className="beerTile">
         <BeerTile beers={beersArray}/>  
         </section>

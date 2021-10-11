@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap");
+@media (min-device-width: 320px) {
+  .app {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+  }
+
+  .header {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #009ccc;
+    color: #f2f2f2;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .header__image {
+    height: 50px;
+  }
+}
+@media (min-device-width: 768px) {
+  .app {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+  }
+
+  .header {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #009ccc;
+    color: #f2f2f2;
+    font-size: 35px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .header__image {
+    height: 80px;
+  }
+}
+@media (min-device-width: 1200px) {
+  .app {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+  }
+
+  .header {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #009ccc;
+    color: #f2f2f2;
+    font-size: 40px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .header__image {
+    height: 100px;
+  }
+}

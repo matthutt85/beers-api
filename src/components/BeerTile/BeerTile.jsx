@@ -12,7 +12,8 @@ const BeerTile = (props) => {
         title={beerObj.name} 
         image={beerObj.image_url}
         description={beerObj.description}
-        abv={beerObj.abv}/>
+        abv={beerObj.abv}
+        ph={beerObj.ph}/>
     });
 
     return (

@@ -6,16 +6,20 @@
 
 
 @media (min-device-width: 320px) {
+
+    .nav {
+        background-image: url("../../assets/images/beer.jpeg");
+        background-size: 100px;
+        background-repeat: no-repeat;
+    }
     
     .nav__form {
         display: flex;
         align-items: center;
         justify-content: center;
-        margin: 10px;
         font-family: $primary-font;
         border-radius: 15px;
-        background-color: gray;
-        
+               
     }
     
     .checkbox {
@@ -29,7 +33,7 @@
     }
     
     .nav__form-input {
-        margin: 20px;
+        margin: 35px;
 
         height: 30px;
         width: 30vh;
@@ -42,6 +46,12 @@
 }
 
 @media (min-device-width: 768px) {
+
+    .nav {
+        background-image: url("../../assets/images/beer.jpeg");
+        background-size: 100px;
+        background-repeat: no-repeat;
+    }
  
     .nav__form {
         display: flex;
@@ -87,6 +97,7 @@
         margin: 10px;
         font-family: $primary-font;
         border-radius: 15px;
+        
         
     }
     
