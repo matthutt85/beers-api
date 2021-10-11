@@ -29,6 +29,15 @@ const App = () => {
   const [ acidic, setAcidic ] = useState(false);
 
 
+  const handleClassic = () => {
+    if(classic === true){
+      setClassic(false)
+    }else {
+      setClassic(true)
+    }
+  }
+
+
   
   const handleAcidic = () => {
     if(acidic === true){
@@ -65,7 +74,11 @@ const App = () => {
   }
 
   if (acidic === true){
-    url = "https://api.punkapi.com/v2/beers?ibu_lt=60";
+    url = "https://api.punkapi.com/v2/beers?ph_lt=4";
+  }
+
+  if (classic === true){
+    url = "https://api.punkapi.com/v2/beers?brewed_before=12-2010"
   }
    
   fetch(url).then(response => {
@@ -75,7 +88,7 @@ const App = () => {
     })
 
 
- }, [abv])
+ }, [abv, classic, acidic])
 
 
 
@@ -88,9 +101,11 @@ const App = () => {
           handleAbv={handleAbv}
           handleAcidic={handleAcidic} 
           handleInput={handleInput}/>
+          handleClassic={handleClassic}
         <p>{"state = " + searchTerm}</p>
         <p>{"abv = " + abv}</p>
         <p>{"acidic = " + acidic}</p>
+        <p>{"classic = " + classic}</p>
         <section className="beerTile">
         <BeerTile beers={beersArray}/>  
         </section>

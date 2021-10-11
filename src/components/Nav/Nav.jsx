@@ -5,7 +5,7 @@ import "./Nav.scss";
 
 const Nav = (props) => {
 
-const { inputValue, handleInput, handleAbv, handleAcidic } = props;
+const { inputValue, handleInput, handleAbv, handleAcidic, handleClassic } = props;
 
 
 
@@ -18,9 +18,9 @@ const { inputValue, handleInput, handleAbv, handleAcidic } = props;
                 <label for="checkbox1">High ABV (> 6.0%)</label>
                 <input type="checkbox" onClick={handleAbv} className="nav__form-checkbox1" name="checkbox1"></input>
                 <label for="checkbox2">Classic Range</label>
-                <input type="checkbox"  className="nav__form-checkbox1" name="checkbox2"></input>     
+                <input type="checkbox" onClick={handleClassic} className="nav__form-checkbox1" name="checkbox2"></input>     
                 <label for="checkbox3">Acidic</label>
-                <input type="checkbox"  onClick={handleAcidic}className="nav__form-checkbox1" name="checkbox3"></input>               
+                <input type="checkbox" onClick={handleAcidic}className="nav__form-checkbox1" name="checkbox3"></input>               
             </div>
         </nav>
     )
