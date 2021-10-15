@@ -7,12 +7,7 @@
 
 @media (min-device-width: 320px) {
 
-    .nav {
-        background-image: url("../../assets/images/beer.jpeg");
-        background-size: 100px;
-        background-repeat: no-repeat;
-    }
-    
+   
     .nav__form {
         display: flex;
         align-items: center;
@@ -65,6 +60,7 @@
     
     .checkbox {
         margin: 10px;
+        padding-top: 10px;
         display: flex;
         justify-content: space-around;
         align-items: center;

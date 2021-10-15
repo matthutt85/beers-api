@@ -64,8 +64,10 @@ const App = () => {
 
 
   const filteredPh = beers.filter(beer => {
+    return beer.ph <= 4;
+  });
 
-  })
+  console.log(filteredPh)
  
  
  
@@ -75,10 +77,6 @@ const App = () => {
   
   if (abv === true){
     url = "https://api.punkapi.com/v2/beers?abv_gt=6";
-  }
-
-  if (acidic === true){
-    url = "https://api.punkapi.com/v2/beers?ph_lt=4";
   }
 
   if (classic === true){
@@ -92,8 +90,15 @@ const App = () => {
   fetch(url).then(response => {
      return response.json()
    }).then(beerObj => {
-     setBeerArray(beerObj)
-    })
+     if(acidic === true) {
+       setBeerArray(filteredPh)
+       console.log(setBeerArray)
+     } else {
+       setBeerArray(beerObj)
+     };
+    
+     
+    });
 
 
  }, [abv, classic, acidic, searchTerm])
