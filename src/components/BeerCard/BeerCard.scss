@@ -173,6 +173,9 @@
     
 
     &__back {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background-color: #009ccc;
         font-size: 15px;
         font-family: $primary-font;
