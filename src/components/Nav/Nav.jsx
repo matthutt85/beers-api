@@ -15,7 +15,7 @@ const { inputValue, handleInput, handleAbv, handleAcidic, handleClassic } = prop
                 <input type="text" value={inputValue} onInput={handleInput} className="nav__form-input" name="search"></input>
             </form>
             <div className="checkbox">
-                <label for="checkbox1">High ABV (> 6.0%)</label>
+                <label for="checkbox1">High ABV > 6.0%</label>
                 <input type="checkbox" onClick={handleAbv} className="nav__form-checkbox1" name="checkbox1"></input>
                 <label for="checkbox2">Classic Range</label>
                 <input type="checkbox" onClick={handleClassic} className="nav__form-checkbox1" name="checkbox2"></input>     
