@@ -12,13 +12,20 @@ const BeerCard = (props) => {
 
     return (
         <div className="card">
-            <h2 className="card__title"> {title} </h2>
-            <img className="card__image" src={image} alt="Beer Image"/>
-            <p className="card__description">{description}</p>
-            <h3 className="card__abv">ABV: {abv}%</h3>
-            <h3 className="card__ph"> PH: {ph}</h3>
+            <div className="card__inner">
+                <div className="card__front">
+                    <h2 className="card__title"> {title} </h2>
+                    <img className="card__image" src={image} alt="Beer Image"/>
+                    <h3 className="card__bv">ABV: {abv}%</h3>
+                    <h3 className="card__ph"> PH: {ph}</h3>
+                </div>
+                <div className="card__back">
+                    <p className="card__description">{description}</p>
+                </div>
+            </div>
         </div>
     )
 }
+                    
 
 export default BeerCard
