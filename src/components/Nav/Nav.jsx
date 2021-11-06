@@ -14,16 +14,14 @@ const { inputValue, handleInput, handleAbv, handleAcidic, handleClassic } = prop
             <form className="nav__form">
                 <input type="text" value={inputValue} onInput={handleInput} className="nav__form-input" name="search"></input>
             </form>
-            <div className="checkbox">
-                <label for="checkbox1">High ABV > 6.0%</label>
-                <input type="checkbox" onClick={handleAbv} className="nav__form-checkbox1" name="checkbox1"></input>
-                <label for="checkbox2">Classic Range</label>
-                <input type="checkbox" onClick={handleClassic} className="nav__form-checkbox1" name="checkbox2"></input>     
-                <label for="checkbox3">Acidic</label>
-                <input type="checkbox" onClick={handleAcidic}className="nav__form-checkbox1" name="checkbox3"></input>               
+            <div className="buttons">
+                <button className="buttons__abv" onClick={handleAbv}>High ABV > 6.0%</button>
+                <button className="buttons__classic" onClick={handleClassic}>Classic Range</button>     
+                <button className="buttons__acidic" onClick={handleAcidic}>Acidic</button>
             </div>
         </nav>
     )
 }
 
 export default Nav
+                            
