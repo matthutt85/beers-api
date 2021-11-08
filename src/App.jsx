@@ -30,6 +30,7 @@ const App = () => {
   const [ acidic, setAcidic ] = useState(false);
 
 
+
   const handleClassic = () => {
     if(classic === true){
       setClassic(false)
@@ -37,7 +38,6 @@ const App = () => {
       setClassic(true)
     }
   }
-
 
   
   const handleAcidic = () => {
@@ -67,13 +67,14 @@ const App = () => {
     return beer.ph <= 4;
   });
 
-  console.log(filteredPh)
+
  
- 
+
  
   useEffect(() => {
 
   let url = "https://api.punkapi.com/v2/beers"
+  
   
   if (abv === true){
     url = "https://api.punkapi.com/v2/beers?abv_gt=6";
@@ -86,6 +87,8 @@ const App = () => {
   if (searchTerm) {
     url = `https://api.punkapi.com/v2/beers?beer_name=${searchTerm}`
   }
+
+
    
   fetch(url).then(response => {
      return response.json()
@@ -116,12 +119,14 @@ const App = () => {
           handleAbv={handleAbv}
           handleAcidic={handleAcidic} 
           handleInput={handleInput}
-          handleClassic={handleClassic}/>
+          handleClassic={handleClassic}
+          />
           
         {/* <p>{"state = " + searchTerm}</p>
         <p>{"abv = " + abv}</p>
         <p>{"acidic = " + acidic}</p>
-        <p>{"classic = " + classic}</p> */}
+        <p>{"classic = " + classic}</p>
+        <p>{"buttonColor = " + buttonColor}</p> */}
         <section className="beerTile">
         <BeerTile beers={beersArray}/>  
         </section>
