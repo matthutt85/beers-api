@@ -35,6 +35,7 @@
         display: flex;
         justify-content: space-evenly;
         align-items: center;
+        padding-bottom: 15px;
 
         &__abv {
             border-radius: 10px;
@@ -42,7 +43,9 @@
             background-color: #009ccc;
             color: whitesmoke;
             height: 25px;
+            width: 75px;
             cursor: pointer;
+            font-size: 10px;
             
         }
 
@@ -52,6 +55,8 @@
             background-color: #009ccc;
             color: whitesmoke;
             height: 25px;
+            width: 75px;
+            font-size: 10px;
         }
 
         &__acidic {
@@ -60,6 +65,8 @@
             background-color: #009ccc;
             color: whitesmoke;
             height: 25px;
+            width: 75px;
+            font-size: 10px;
         }
         
     }
@@ -69,11 +76,7 @@
 
 @media (min-device-width: 768px) {
 
-    .nav {
-        background-image: url("../../assets/images/beer.jpeg");
-        background-size: 100px;
-        background-repeat: no-repeat;
-    }
+    
  
     .nav__form {
         display: flex;
@@ -85,22 +88,50 @@
         
     }
     
-    .checkbox {
-        margin: 10px;
-        padding-top: 10px;
+    .buttons {
+        height: 35px;
+        width: 100%;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
         align-items: center;
-        font-family: $primary-font;
-        color: brown;
-        font-size: 15px;
+        padding-bottom: 15px;
+
+        &__abv {
+            border-radius: 10px;
+            border: none;
+            background-color: #009ccc;
+            color: whitesmoke;
+            height: 25px;
+            width: 115px;
+            cursor: pointer;
+            
+        }
+
+        &__classic {
+            border-radius: 10px;
+            border: none;
+            background-color: #009ccc;
+            color: whitesmoke;
+            height: 25px;
+            width: 115px;
+        }
+
+        &__acidic {
+            border-radius: 10px;
+            border: none;
+            background-color: #009ccc;
+            color: whitesmoke;
+            height: 25px;
+            width: 115px;
+        }
+        
     }
     
     .nav__form-input {
         margin: 30px;
 
-        height: 30px;
-        width: 30vh;
+        height: 25px;
+        width: 35vh;
         border: 2px solid $primary-color;
         border-radius: 10px;
         font-size: 20px;
@@ -111,7 +142,7 @@
 
 
 
-@media (min-device-width: 1200px) {
+@media (min-device-width: 1024px) {
     
     .nav__form {
         display: flex;
@@ -124,21 +155,50 @@
         
     }
     
-    .checkbox {
-        margin: 10px;
+    .buttons {
+        height: 60px;
+        width: 100%;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
         align-items: center;
-        font-family: $primary-font;
-        color: brown;
-        font-size: 20px;
+        margin: 10px;
+
+        &__abv {
+            border-radius: 10px;
+            border: none;
+            background-color: #009ccc;
+            color: whitesmoke;
+            height: 30px;
+            width: 120px;
+            cursor: pointer;
+            
+        }
+
+        &__classic {
+            border-radius: 10px;
+            border: none;
+            background-color: #009ccc;
+            color: whitesmoke;
+            height: 30px;
+            width: 120px;
+        }
+
+        &__acidic {
+            border-radius: 10px;
+            border: none;
+            background-color: #009ccc;
+            color: whitesmoke;
+            height: 30px;
+            width: 120px;
+        }
+        
     }
     
     .nav__form-input {
         margin: 30px;
 
         height: 30px;
-        width: 30vh;
+        width: 40vh;
         border: 2px solid $primary-color;
         border-radius: 10px;
         font-size: 20px;
@@ -148,3 +208,69 @@
 }
 
 
+@media (min-device-width: 1440px) {
+    
+    .nav__form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+        font-family: $primary-font;
+        border-radius: 15px;
+        
+        
+    }
+
+    .nav__form-input {
+        margin: 40px;
+
+        height: 40px;
+        width: 50vh;
+        border: 2px solid $primary-color;
+        border-radius: 10px;
+        font-size: 20px;
+        color: $color-black;
+        
+    }
+    
+    .buttons {
+        height: 35px;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 15px;
+
+        &__abv {
+            border-radius: 10px;
+            border: none;
+            background-color: #009ccc;
+            color: whitesmoke;
+            height: 35px;
+            width: 125px;
+            cursor: pointer;
+            
+        }
+
+        &__classic {
+            border-radius: 10px;
+            border: none;
+            background-color: #009ccc;
+            color: whitesmoke;
+            height: 35px;
+            width: 125px;
+        }
+
+        &__acidic {
+            border-radius: 10px;
+            border: none;
+            background-color: #009ccc;
+            color: whitesmoke;
+            height: 35px;
+            width: 125px;
+        }
+        
+    }
+    
+    
+}

@@ -8,17 +8,37 @@ const Nav = (props) => {
 
 const { inputValue, handleInput, handleAbv, handleAcidic, handleClassic } = props;
 
-const [ buttonColor, setButtonColor ] = useState(false) //state for buttonColor
+const [ abvButtonColor, setAbvButtonColor ] = useState(false) //state for buttonColor
+const [ classicButtonColor, setClassicButtonColor ] = useState(false)
+const [ acidicButtonColor, setAcidicButtonColor ] = useState(false)
 
-const toggleColor = () => {      //setting toggleColor to true or false state
-    if(buttonColor === true) {
-        setButtonColor(false)
+const toggleAbvColor = () => {      //setting toggleColor to true or false state
+    if(abvButtonColor === true) {
+        setAbvButtonColor(false)
     }else{
-        setButtonColor(true)
+        setAbvButtonColor(true)
+    }
+}
+
+const toggleClassicColor = () => {
+    if (classicButtonColor === true) {
+        setClassicButtonColor(false)
+    }else{
+        setClassicButtonColor(true)
+    }
+}
+
+const toggleAcidicColor = () => {
+    if (acidicButtonColor === true) {
+        setAcidicButtonColor(false)
+    } else {
+        setAcidicButtonColor(true)
     }
 }
     
-    const backgroundColorChange = buttonColor?"green":"#009ccc";
+    const abvColorChange = abvButtonColor?"green":"#009ccc";
+    const classicColorChange = classicButtonColor?"green":"#009ccc";
+    const acidicColorChange = acidicButtonColor?"green":"#009ccc";
 
 
     return (
@@ -27,9 +47,9 @@ const toggleColor = () => {      //setting toggleColor to true or false state
                 <input type="text" value={inputValue} onInput={handleInput} className="nav__form-input" name="search"></input>
             </form>
             <div className="buttons">
-                <button className="buttons__abv" onClick={() => {handleAbv(); toggleColor();}} style={{backgroundColor: backgroundColorChange}}>High ABV  6.0%</button>
-                <button className="buttons__classic" onClick={() => {handleClassic(); toggleColor();}} style={{backgroundColor: backgroundColorChange}} >Classic Range</button>     
-                <button className="buttons__acidic" onClick={handleAcidic} >Acidic</button>
+                <button className="buttons__abv" onClick={() => {handleAbv(); toggleAbvColor();}} style={{backgroundColor: abvColorChange}}>High ABV > 6.0%</button>
+                <button className="buttons__classic" onClick={() => {handleClassic(); toggleClassicColor();}} style={{backgroundColor: classicColorChange}} >Classic Range</button>     
+                <button className="buttons__acidic" onClick={() => {handleAcidic(); toggleAcidicColor();}} style={{backgroundColor: acidicColorChange}}>Acidic</button>
             </div>
         </nav>
         // onClick={() => {handleAbv(); toggleColor()}}

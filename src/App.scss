@@ -66,7 +66,7 @@
 }
 
 
-@media (min-device-width: 1200px) {
+@media (min-device-width: 1024px) {
 
 
 .app {
@@ -78,7 +78,7 @@
 }
 
 .header {
-    height: 10vh;
+    height: 13vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -91,7 +91,37 @@
 }
 
 .header__image {
-    height: 100px;
+    height: 125px;
 }
 
 }
+
+@media (min-device-width: 1440px) {
+
+
+    .app {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: $primary-white;
+        
+    }
+    
+    .header {
+        height: 15vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 10px;
+        padding-right: 10px;
+        background-color: rgb(0, 156, 204);
+        color: $primary-white;
+        font-size: 50px;
+        font-family: $primary-font;
+    }
+    
+    .header__image {
+        height: 150px;
+    }
+    
+    }
