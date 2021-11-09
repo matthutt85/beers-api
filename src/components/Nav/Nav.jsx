@@ -8,11 +8,11 @@ const Nav = (props) => {
 
 const { inputValue, handleInput, handleAbv, handleAcidic, handleClassic } = props;
 
-const [ abvButtonColor, setAbvButtonColor ] = useState(false) //state for buttonColor
+const [ abvButtonColor, setAbvButtonColor ] = useState(false) 
 const [ classicButtonColor, setClassicButtonColor ] = useState(false)
 const [ acidicButtonColor, setAcidicButtonColor ] = useState(false)
 
-const toggleAbvColor = () => {      //setting toggleColor to true or false state
+const toggleAbvColor = () => {      
     if(abvButtonColor === true) {
         setAbvButtonColor(false)
     }else{

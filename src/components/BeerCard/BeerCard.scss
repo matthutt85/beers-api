@@ -16,7 +16,7 @@
         background-color: transparent;
         border: 3px solid rgb(213, 211, 211);
         margin: 10px;
-        padding: 10px;
+        padding-bottom: 60px;
         border-radius: 15px;
         perspective: 1000px;
         box-shadow: 0 0 10px $primary-color;
@@ -54,6 +54,7 @@
                 justify-content: center;
                 align-items: center;
                 color: $primary-color;
+                font-family: $primary-font;
             }
         
             &__ph {
@@ -61,6 +62,11 @@
                 justify-content: center;
                 align-items: center;
                 color: red;
+                font-family: $primary-font;
+            }
+
+            &__date {
+                font-family: $primary-font;
             }
         
     
@@ -110,7 +116,7 @@
         background-color: transparent;
         border: 3px solid rgb(213, 211, 211);
         margin: 10px;
-        padding: 10px;
+        padding-bottom: 100px;
         border-radius: 15px;
         perspective: 1000px;
         box-shadow: 0 0 10px $primary-color;
@@ -146,7 +152,8 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                color: $primary-color;
+                color: $color-black;
+                font-family: $primary-font;
             }
         
             &__ph {
@@ -154,6 +161,13 @@
                 justify-content: center;
                 align-items: center;
                 color: red;
+                font-family: $primary-font;
+                
+            }
+
+            &__date {
+                font-family: $primary-font;
+                color: $color-black;
             }
         
     
@@ -206,7 +220,7 @@
     background-color: transparent;
     border: 3px solid rgb(213, 211, 211);
     margin: 10px;
-    padding: 10px;
+    padding-bottom: 40px;
     border-radius: 15px;
     perspective: 1000px;
 
@@ -241,7 +255,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            color: $primary-color;
+            font-family: $primary-font;
+            color: $color-black;
         }
     
         &__ph {
@@ -249,6 +264,11 @@
             justify-content: center;
             align-items: center;
             color: red;
+        }
+
+        &__date {
+            font-family: $primary-font;
+            color: $color-black;
         }
     
 
