@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/beers-api/static/css/main.906f9781.chunk.css",
-    "main.js": "/beers-api/static/js/main.8c40130c.chunk.js",
-    "main.js.map": "/beers-api/static/js/main.8c40130c.chunk.js.map",
+    "main.css": "/beers-api/static/css/main.e02e3033.chunk.css",
+    "main.js": "/beers-api/static/js/main.4963ea32.chunk.js",
+    "main.js.map": "/beers-api/static/js/main.4963ea32.chunk.js.map",
     "runtime-main.js": "/beers-api/static/js/runtime-main.3631d9ab.js",
     "runtime-main.js.map": "/beers-api/static/js/runtime-main.3631d9ab.js.map",
     "static/js/2.e1c4b16d.chunk.js": "/beers-api/static/js/2.e1c4b16d.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.d7b891e4.chunk.js": "/beers-api/static/js/3.d7b891e4.chunk.js",
     "static/js/3.d7b891e4.chunk.js.map": "/beers-api/static/js/3.d7b891e4.chunk.js.map",
     "index.html": "/beers-api/index.html",
-    "static/css/main.906f9781.chunk.css.map": "/beers-api/static/css/main.906f9781.chunk.css.map",
+    "static/css/main.e02e3033.chunk.css.map": "/beers-api/static/css/main.e02e3033.chunk.css.map",
     "static/js/2.e1c4b16d.chunk.js.LICENSE.txt": "/beers-api/static/js/2.e1c4b16d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.3631d9ab.js",
     "static/js/2.e1c4b16d.chunk.js",
-    "static/css/main.906f9781.chunk.css",
-    "static/js/main.8c40130c.chunk.js"
+    "static/css/main.e02e3033.chunk.css",
+    "static/js/main.4963ea32.chunk.js"
   ]
 }
